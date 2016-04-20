@@ -2,32 +2,138 @@
 <html>
   <head>
     <title>GEODATABASE</title>
+    <style>
+      #header {
+      background-color:black;
+      color:white;
+      text-align:center;
+      padding:5px;
+      }
+      #definition {
+      background-color:cyan;
+      color:black;
+      padding:5px;
+      }
+      #explan {
+      background-color:#009933;
+      color:black;
+      padding:5px;
+      }
+      #feature {
+      background-color:#996600;
+      color:black;
+      padding:5px;
+      }
+      #another {
+      background-color:#669999;
+      color:black;
+      padding:5px;
+      }
+      #truth {
+      background-color:#ffffff;
+      color:black;
+      padding:5px;
+      }
+      ul { 
+      display:table;
+      margin:0 auto;
+      font-size:150%;
+      }
+    </style>
   </head>
-  
   <body>
-    <center>
-      <h1>Geodatabase</h1>
-    </center>
-    <h2>What is a GIS</h2>
-    <ul>
-      <li>A geographical information system helps visualize and manage data with regards to geography</li>
-    </ul>
-    <h2>What is a Geodatabase</h2>
-    <ul>
-      <li>A container for various types of data</li>
-      <li>Vector, Raster, Tables, Address coding, etc.</li>
-      <li>An Esri Geodatabase can include:</li>
-      <li>Feature Classes: An attribute which shares a “common geometry” (points, lines, and shapes) with other attributes.</li>
-      <li>Ex: District Lines and Lot Lines</li>
-      <li>Address Geocoding: A program which links locations with an address</li>
-      <li>Topology: Ruleset for how the polygons of the visualization are formatted</li>
-      <li>Relationship Class: Creates dependencies between specific datatypes</li>
-      <li>A set of feature data can be up to 1 TB</li>
-    </ul>
-    <h2>What <i>really</i> is a Geodatabase</h2>
-    <ul>
-      <li>This is essential SQL with tons of data</li>
-      <li>A database is just a collection of datasets of various types run through a program in order to create a visual aid for users</li>
-    </ul>
+    <div id="header">
+      
+      <h1 style="font-size:300%;">Geodatabase</h1>
+      
+    </div>
+    <div id="definition">
+      <center>
+      <h2 style="font-size:200%;">What is a GIS</h2>
+      </center>
+	<ul>
+	  <li>A geographical information system helps people visualize and manage data with regards to geography</li>
+	  <li>The data could be something as simple as street names and orientation</li>
+	  <li>Geographical information is data with respect to location</li>
+	</ul>
+	<br>
+	<br>
+	<ul>
+	  <li>Common examples of geographic information systems are a commercial gps and google maps</li>
+	</ul>
+	<br>
+	<center>
+	<img src="gps.jpg" style="width:450px;height:300px;"><img src="gmap.png" style="width:450px;height:300px;">
+	</center>
+      </div>
+
+
+      <div id="explan">
+	<center>
+	<h2 style="font-size:200%;">What is a Geodatabase</h2>
+	</center>
+	<ul>
+	  <li>A geodatabase is a mutable datastructure which contains all the data one wishes to present</li>
+	  <li>There are several programs which perform geodatabase like functions</li>
+	  <li>The most notable is <a href="https://www.arcgis.com/features/">Esri's ArcGIS</a></li>
+	</ul>
+	<br>
+	<center>
+	  <img src="arcgis.jpg" style="width:600px;height:300px;">
+	</center>
+      </div>
+
+
+      <div id="feature">
+	<center>
+	<h2 style="font-size:200%;">Features of a Geodatabase</h2>
+	</center>
+	<ul>
+	  <li>Generally, a geodatabse is a container for various types of data</li>
+	  <li>Vector, Raster, Tables, Address coding, etc.</li>
+	</ul>
+	<br>
+	<ul>
+	  <li>An Esri Geodatabase can include:</li>
+	  <li>Feature Classes: An attribute which shares a "common geometry" (points, lines, and shapes) with other attributes.</li>
+	  <li>Ex: District Lines and Lot Lines</li>
+	  <li>Address Geocoding: A program which links locations with an address</li>
+	  <li>Topology: Ruleset for how the polygons of the visualization are formatted</li>
+	  <li>Relationship Class: Creates dependencies between specific datatypes</li>
+	  <li>A set of feature data can be up to 1 TB</li>
+	</ul>
+      </div>
+
+      <div id="another">
+	<center>
+	  <h2 style="font-size:200%;">Google Maps Data Layer</h2>
+	</center>
+	<ul>
+	  <li>An alternative to ArcGIS is the <a href="https://developers.google.com/maps/documentation/javascript/datalayer
+">Google Maps Data Layer</a></li>
+	  <li>When creating a website which uses Google Maps API, one can include unique overlays through the data layer</li>
+	  <li>The data layer is designed to take data from an online format, <a href="http://geojson.org/geojson-spec.html">GeoJSON</a></li>
+	  <li>The data layer can then be modified with javascript</li>
+	</ul>
+	<br>
+	  <center>
+	    <img src="dlayer.png">
+	  </center>
+      </div>
+
+      
+      <div id="truth">
+	<center>
+	<h2 style="font-size:200%;">What <i>really</i> is a Geodatabase</h2>
+	</center>
+	<ul>
+	  <li>Truth be told, a geodatabase is essential SQL with tons of data</li>
+	  <li>It is a sql style collection of datasets of various types run through a program in order to create a visual aid for users</li>
+	</ul>
+	<br>
+	<center>
+	  <img src="table.gif" style="width:600px;height:300px;">
+	</center>
+      </div>
   </body>
 </html>
